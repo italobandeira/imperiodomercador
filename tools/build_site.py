@@ -30,7 +30,7 @@ GAME = Path(os.environ.get("GAME_DIR", ROOT.parent / "imperio-do-mercador")).res
 BASE = os.environ.get("SITE_BASE", "https://italobandeira.github.io/imperiodomercador/")
 LOVEC = os.environ.get("LOVEC", r"C:\Program Files\LOVE\lovec.exe")
 SAVE_DIR = Path(os.environ.get("APPDATA", "")) / "LOVE" / "imperio_do_mercador"
-PLAY_URL = "https://play.google.com/store/apps/details?id=com.italobandeira.imperiodomercador"
+PLAY_URL = "https://play.google.com/store/apps/details?id=com.iflag.empire_of_the_merchant"
 UPDATED = "2026-10-21"
 
 # Português na raiz; os outros idiomas em subpastas com os mesmos nomes de arquivo.
