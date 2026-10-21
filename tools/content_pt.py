@@ -80,8 +80,8 @@ PT = {
         "faq": [
             ("O jogo é grátis?", "Sim. Há compras opcionais, como o Pacote Inicial e o Passe da Masmorra, e vídeos opcionais que dão bônus. Dá para jogar tudo sem pagar."),
             ("Precisa de internet?", "Não para jogar. A internet só é usada para carregar os vídeos com recompensa e para fazer compras."),
-            ("Preciso criar uma conta?", "Não. O progresso fica salvo no próprio aparelho, sem login."),
-            ("Troquei de celular. Perco o progresso?", "O jogo não tem servidor nem login. Se o backup do Google estiver ativo no seu Android, o sistema pode restaurar os dados do jogo no aparelho novo. Desinstalar o jogo ou apagar os dados dele apaga o progresso."),
+            ("Preciso criar uma conta?", "Não. O progresso fica salvo no aparelho e, se você usar o Google Play Games, também na nuvem. Não existe cadastro no jogo."),
+            ("Troquei de celular. Perco o progresso?", "Não, se você usar o Google Play Games: o jogo guarda uma cópia do progresso na sua conta e, no celular novo, pergunta se você quer continuar de onde parou. Compras permanentes voltam pela sua Conta Google. Sem o Play Games, o backup do Google do Android também pode restaurar o jogo."),
             ("Existem caixas de recompensa pagas?", "Não. Heróis e gerentes raros vêm de compra direta com o conteúdo à mostra, do progresso, de eventos ou do passe. Nada pago é sorteado."),
             ("Em quais idiomas está disponível?", "Português, inglês e espanhol. O idioma pode ser trocado nas Opções."),
             ("Como falo com o desenvolvedor?", 'Pela <a href="contact.html">página de contato</a> ou pelo e-mail <a href="mailto:' + EMAIL + '">' + EMAIL + '</a>.'),
@@ -94,12 +94,12 @@ PT = {
         "description": "Política de Privacidade do Império do Mercador: progresso salvo no aparelho, vídeos com recompensa do Unity LevelPlay, compras pelo Google Play e seus direitos.",
         "lead": "O Império do Mercador foi feito para funcionar sem conta e sem servidor. Esta política explica o que fica no seu aparelho, o que os serviços de anúncios e de compras podem receber e quais escolhas você tem.",
         "ledger": [
-            ("phone", "Seu progresso fica no aparelho e não é enviado à iFlag."),
+            ("phone", "Seu progresso fica no aparelho e, com o Play Games, na sua conta Google. Nada é enviado à iFlag."),
             ("ad", "Os vídeos com recompensa são opcionais, vêm do Unity LevelPlay e não são personalizados."),
             ("card", "As compras são feitas pelo Google Play. A iFlag não vê seus dados de pagamento."),
         ],
         "summary_title": "Em poucas palavras",
-        "summary": "Você não precisa criar uma conta. O progresso do jogo fica salvo no aparelho, e o jogo não usa ferramentas de análise nem cria perfis. Os vídeos com recompensa, sempre opcionais, são entregues pelo Unity LevelPlay, que trata dados técnicos e o identificador de publicidade para exibir anúncios não personalizados, medir a entrega e evitar fraude. As compras são processadas pelo Google Play.",
+        "summary": "Você não precisa criar uma conta. O progresso do jogo fica salvo no aparelho e, se você entrar no Google Play Games, uma cópia fica na sua conta Google para você recuperá-la em outro celular. O jogo não usa ferramentas de análise nem cria perfis. Os vídeos com recompensa, sempre opcionais, são entregues pelo Unity LevelPlay, que trata dados técnicos e o identificador de publicidade para exibir anúncios não personalizados, medir a entrega e evitar fraude. As compras são processadas pelo Google Play.",
         "sections": [
             ("quem-somos", "1. Quem somos e a que esta política se aplica",
              "<p>Esta Política de Privacidade se aplica ao jogo <strong>Império do Mercador</strong> para Android e às comunicações de suporte relacionadas a ele.</p>"
@@ -109,7 +109,7 @@ PT = {
              '<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de dados tratados"><table class="data-table">'
              "<thead><tr><th>Fluxo</th><th>Dados envolvidos</th><th>Onde ficam</th></tr></thead><tbody>"
              "<tr><td>Progresso do jogo</td><td>Ouro, lojas, heróis, coroas, gemas, configurações, idioma e as datas e horas de acesso, usadas para calcular o ganho offline, o calendário e os eventos.</td><td>No seu aparelho. Pode ser incluído no backup automático do Android na sua Conta Google, se esse recurso estiver ativo.</td></tr>"
-             "<tr><td>Notificações</td><td>Os avisos agendados (baú cheio, Bênção acabando, Feira aberta) e seus horários.</td><td>No seu aparelho, agendados pelo próprio Android. Nada é enviado a servidor.</td></tr>"
+             "<tr><td>Progresso na nuvem</td><td>Seu ID de jogador e nome no Google Play Games e uma cópia do progresso do jogo (o mesmo conteúdo da linha acima), com o tempo de jogo, a data e o nome do aparelho.</td><td>Na sua conta do Google Play Games, em uma área do Google Drive reservada ao jogo e invisível na sua lista de arquivos. Só acontece se você estiver conectado ao Play Games.</td></tr><tr><td>Notificações</td><td>Os avisos agendados (baú cheio, Bênção acabando, Feira aberta) e seus horários.</td><td>No seu aparelho, agendados pelo próprio Android. Nada é enviado a servidor.</td></tr>"
              "<tr><td>Vídeos com recompensa</td><td>Identificador de publicidade, endereço IP, modelo e sistema do aparelho, idioma, dados do app, interação com o anúncio e dados de diagnóstico e de prevenção a fraude.</td><td>Tratados pela Unity Technologies (LevelPlay) e pelos parceiros de publicidade envolvidos na entrega do anúncio.</td></tr>"
              "<tr><td>Compras no jogo</td><td>Produto comprado, situação da compra e o comprovante do Google Play. Número de cartão e outros dados de pagamento ficam com o Google.</td><td>No Google Play, vinculados à sua Conta Google. No aparelho, o jogo guarda apenas o registro de que o produto foi entregue.</td></tr>"
              "<tr><td>Suporte</td><td>Seu e-mail e as informações que você incluir na mensagem.</td><td>Na caixa de e-mail usada para responder.</td></tr>"
@@ -118,6 +118,7 @@ PT = {
             ("finalidades", "3. Como e por que usamos os dados",
              "<p>Usamos as informações apenas para:</p><ul>"
              "<li>salvar o seu progresso e calcular o que acontece enquanto você está fora, como o ganho offline;</li>"
+             "<li>guardar uma cópia do progresso na sua conta do Google Play Games e oferecê-la num aparelho novo;</li>"
              "<li>agendar as notificações locais que você permitiu;</li>"
              "<li>exibir os vídeos com recompensa que você escolher assistir, entregar o bônus, medir a entrega e combater fraude;</li>"
              "<li>entregar e confirmar compras feitas pelo Google Play e restaurar compras permanentes;</li>"
@@ -130,6 +131,8 @@ PT = {
              "<p>Os vídeos aparecem só quando você toca num botão de vídeo para ganhar um bônus. Eles são entregues pelo Unity LevelPlay, da Unity Technologies, que pode usar o identificador de publicidade, o endereço IP e sinais do aparelho para entregar o anúncio, limitar repetições, gerar relatórios e prevenir fraude.</p>"
              "<p>Antes de iniciar o serviço, o jogo informa que não há consentimento para publicidade personalizada e pede que os dados não sejam vendidos. Assim, os anúncios exibidos não são personalizados. Em países do Espaço Econômico Europeu, no Reino Unido e na Suíça, o serviço de anúncios não é iniciado.</p>"
              '<p>Você pode redefinir ou excluir o identificador de publicidade nas configurações do Android (Google &gt; Anúncios). Saiba mais na <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener noreferrer">Política de Privacidade da Unity para jogadores</a>.</p>'
+             "<h3>Progresso na nuvem (Google Play Games)</h3>"
+             "<p>Se você estiver conectado ao Google Play Games (o login costuma ser automático no Android), o jogo envia uma cópia do progresso para a sua conta de tempos em tempos e quando você sai do jogo. Ao abrir o jogo num aparelho com menos progresso, ele mostra os dois e pergunta qual usar. A iFlag não tem acesso a essa cópia: ela fica nos serviços do Google, sujeita à <a href=\"https://policies.google.com/privacy?hl=pt-BR\" target=\"_blank\" rel=\"noopener noreferrer\">Política de Privacidade do Google</a>. Você pode sair do Play Games ou apagar os dados de jogos nas configurações do aplicativo Play Games.</p>"
              "<h3>Compras no jogo (Google Play)</h3>"
              '<p>As compras são feitas pelo sistema de pagamentos do Google Play. O jogo consulta o Google Play para confirmar o pagamento e restaurar compras permanentes. <strong>A iFlag não recebe nem armazena número de cartão, endereço de cobrança ou outros dados de pagamento.</strong> Esse tratamento segue os <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener noreferrer">Termos de Serviço do Google Play</a> e a <a href="https://policies.google.com/privacy?hl=pt-BR" target="_blank" rel="noopener noreferrer">Política de Privacidade do Google</a>.</p>'
              "<h3>Backup automático do Android</h3>"
@@ -139,10 +142,11 @@ PT = {
             ("retencao", "5. Por quanto tempo os dados ficam guardados",
              "<ul>"
              "<li><strong>Progresso do jogo:</strong> fica no aparelho até você usar \"Apagar progresso\" nas Opções, apagar os dados do app ou desinstalar o jogo.</li>"
+             "<li><strong>Cópia na nuvem:</strong> fica na sua conta do Play Games até você apagar os dados do jogo no aplicativo Play Games ou na sua Conta Google; cada envio substitui o anterior.</li>"
              "<li><strong>Notificações:</strong> são canceladas quando você as desliga nas Opções ou no Android, e substituídas a cada vez que você sai do jogo.</li>"
              "<li><strong>Dados de anúncios e de compras:</strong> são mantidos pela Unity e pelo Google segundo as políticas, configurações e obrigações legais de cada um.</li>"
              "<li><strong>Mensagens de suporte:</strong> pelo tempo necessário para resolver o pedido e, quando aplicável, cumprir obrigações ou resguardar direitos.</li>"
-             "</ul><p>Como o progresso fica só no aparelho, a iFlag não consegue recuperá-lo nem apagá-lo à distância.</p>"),
+             "</ul><p>Como o progresso fica no aparelho e na sua conta do Google, a iFlag não consegue recuperá-lo nem apagá-lo à distância.</p>"),
             ("direitos", "6. Suas escolhas e direitos",
              "<p>Nos termos da LGPD e conforme aplicável, você pode pedir confirmação e acesso, correção, anonimização, bloqueio ou eliminação, portabilidade, informação sobre compartilhamentos, oposição, revogação do consentimento e informação sobre as consequências de não consentir.</p>"
              "<p>Você também pode agir diretamente:</p><ul>"
@@ -196,7 +200,7 @@ PT = {
             ("anuncios", "5. Vídeos com recompensa",
              "<p>Alguns botões oferecem um bônus em troca de assistir a um vídeo. Os vídeos são sempre opcionais, têm limite diário e são fornecidos por terceiros (Unity LevelPlay). Não controlamos o conteúdo dos anúncios; se encontrar um anúncio impróprio, avise pelo nosso contato. Se não houver vídeo disponível, o bônus pode não ser entregue naquele momento.</p>"),
             ("progresso", "6. Progresso e dados no aparelho",
-             "<p>O progresso fica salvo no seu aparelho. Não há servidor com cópia dele, e a iFlag não consegue recuperá-lo. Desinstalar o jogo, apagar os dados do app, trocar de aparelho sem backup ou usar \"Apagar progresso\" apaga o progresso de forma definitiva. O backup automático do Android, quando ativo, pode ajudar a restaurá-lo.</p>"
+             "<p>O progresso fica salvo no seu aparelho e, se você estiver conectado ao Google Play Games, numa cópia na sua conta, que o jogo oferece ao ser aberto num aparelho novo. A iFlag não tem servidor com cópia do progresso e não consegue recuperá-lo. Sem o Play Games e sem o backup do Android, desinstalar o jogo, apagar os dados do app ou usar \"Apagar progresso\" apaga o progresso de forma definitiva.</p>"
              "<p>Alterar o relógio do aparelho para acelerar o jogo pode causar resultados inesperados, inclusive a perda de bônus.</p>"),
             ("atualizacoes", "7. Atualizações e disponibilidade",
              "<p>Podemos lançar atualizações para corrigir problemas, ajustar o equilíbrio ou adicionar conteúdo. Algumas funções podem exigir a versão mais recente. Também podemos alterar, suspender ou encerrar o jogo ou partes dele, avisando com antecedência razoável quando a mudança afetar compras permanentes.</p>"),

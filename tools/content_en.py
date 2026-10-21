@@ -79,8 +79,8 @@ EN = {
         "faq": [
             ("Is the game free?", "Yes. There are optional purchases, like the Starter Pack and the Dungeon Pass, and optional videos that give bonuses. You can play everything without paying."),
             ("Do I need internet?", "Not to play. The internet is only used to load rewarded videos and to make purchases."),
-            ("Do I need an account?", "No. Your progress is saved on the device itself, with no login."),
-            ("I got a new phone. Will I lose my progress?", "The game has no server and no login. If Google backup is on in your Android settings, the system can restore the game data on your new device. Uninstalling the game or clearing its data deletes your progress."),
+            ("Do I need an account?", "No. Your progress is saved on the device and, if you use Google Play Games, in the cloud too. There is no sign-up in the game."),
+            ("I got a new phone. Will I lose my progress?", "Not if you use Google Play Games: the game keeps a copy of your progress in your account and, on the new phone, asks if you want to pick up where you left off. Permanent purchases come back with your Google Account. Without Play Games, Android's Google backup can also restore the game."),
             ("Are there paid loot boxes?", "No. Rare heroes and managers come from direct purchases with visible contents, from progress, from events or from the pass. Nothing paid is random."),
             ("Which languages are available?", "English, Portuguese and Spanish. You can switch languages in the Options."),
             ("How do I contact the developer?", 'Through the <a href="contact.html">contact page</a> or by email at <a href="mailto:' + EMAIL + '">' + EMAIL + '</a>.'),
@@ -93,12 +93,12 @@ EN = {
         "description": "Empire of the Merchant Privacy Policy: progress saved on your device, rewarded videos from Unity LevelPlay, purchases through Google Play and your rights.",
         "lead": "Empire of the Merchant was built to work without an account or a server. This policy explains what stays on your device, what the ad and payment services may receive, and the choices you have.",
         "ledger": [
-            ("phone", "Your progress stays on your device and is not sent to iFlag."),
+            ("phone", "Your progress stays on your device and, with Play Games, in your Google account. Nothing is sent to iFlag."),
             ("ad", "Rewarded videos are optional, come from Unity LevelPlay and are not personalized."),
             ("card", "Purchases go through Google Play. iFlag never sees your payment details."),
         ],
         "summary_title": "In short",
-        "summary": "You don't need an account. Your game progress is saved on your device, and the game uses no analytics tools and builds no profiles. Rewarded videos, always optional, are delivered by Unity LevelPlay, which processes technical data and the advertising ID to show non-personalized ads, measure delivery and prevent fraud. Purchases are processed by Google Play.",
+        "summary": "You don't need an account. Your game progress is saved on your device and, if you sign in to Google Play Games, a copy is kept in your Google account so you can restore it on another phone. The game uses no analytics tools and builds no profiles. Rewarded videos, always optional, are delivered by Unity LevelPlay, which processes technical data and the advertising ID to show non-personalized ads, measure delivery and prevent fraud. Purchases are processed by Google Play.",
         "sections": [
             ("who-we-are", "1. Who we are and what this policy covers",
              "<p>This Privacy Policy applies to the <strong>Empire of the Merchant</strong> game for Android and to related support communications.</p>"
@@ -108,7 +108,7 @@ EN = {
              '<div class="table-scroll" tabindex="0" role="region" aria-label="Table of processed data"><table class="data-table">'
              "<thead><tr><th>Flow</th><th>Data involved</th><th>Where it stays</th></tr></thead><tbody>"
              "<tr><td>Game progress</td><td>Gold, shops, heroes, crowns, gems, settings, language and the dates and times you play, used to calculate offline earnings, the calendar and events.</td><td>On your device. It may be included in Android's automatic backup to your Google Account if that feature is on.</td></tr>"
-             "<tr><td>Notifications</td><td>Scheduled reminders (full chest, Blessing ending, Fair open) and their times.</td><td>On your device, scheduled by Android itself. Nothing is sent to a server.</td></tr>"
+             "<tr><td>Cloud progress</td><td>Your Google Play Games player ID and name, and a copy of your game progress (the same content as the row above), with play time, date and device name.</td><td>In your Google Play Games account, in a Google Drive area reserved for the game and hidden from your file list. Only if you are signed in to Play Games.</td></tr><tr><td>Notifications</td><td>Scheduled reminders (full chest, Blessing ending, Fair open) and their times.</td><td>On your device, scheduled by Android itself. Nothing is sent to a server.</td></tr>"
              "<tr><td>Rewarded videos</td><td>Advertising ID, IP address, device model and system, language, app data, ad interactions, and diagnostic and fraud prevention data.</td><td>Processed by Unity Technologies (LevelPlay) and the advertising partners involved in delivering the ad.</td></tr>"
              "<tr><td>In-game purchases</td><td>Product purchased, purchase status and the Google Play receipt. Card numbers and other payment data stay with Google.</td><td>On Google Play, linked to your Google Account. On the device, the game only keeps a record that the product was delivered.</td></tr>"
              "<tr><td>Support</td><td>Your email address and whatever you include in your message.</td><td>In the mailbox used to reply.</td></tr>"
@@ -117,6 +117,7 @@ EN = {
             ("purposes", "3. How and why we use data",
              "<p>We only use information to:</p><ul>"
              "<li>save your progress and calculate what happens while you're away, such as offline earnings;</li>"
+             "<li>keep a copy of your progress in your Google Play Games account and offer it on a new device;</li>"
              "<li>schedule the local notifications you allowed;</li>"
              "<li>show the rewarded videos you choose to watch, deliver the bonus, measure delivery and fight fraud;</li>"
              "<li>deliver and confirm purchases made through Google Play and restore permanent purchases;</li>"
@@ -129,6 +130,8 @@ EN = {
              "<p>Videos only appear when you tap a video button to earn a bonus. They are delivered by Unity LevelPlay, from Unity Technologies, which may use the advertising ID, IP address and device signals to deliver the ad, cap repetitions, produce reports and prevent fraud.</p>"
              "<p>Before starting the service, the game signals that there is no consent for personalized advertising and asks that data not be sold. As a result, the ads shown are not personalized. In the European Economic Area, the United Kingdom and Switzerland, the ad service is not started.</p>"
              '<p>You can reset or delete your advertising ID in Android settings (Google &gt; Ads). Learn more in <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener noreferrer">Unity\'s Game Player and App User Privacy Policy</a>.</p>'
+             "<h3>Cloud progress (Google Play Games)</h3>"
+             "<p>If you are signed in to Google Play Games (sign-in is usually automatic on Android), the game uploads a copy of your progress to your account from time to time and when you leave the game. When you open the game on a device with less progress, it shows both and asks which one to use. iFlag has no access to this copy: it stays with Google's services, under the <a href=\"https://policies.google.com/privacy?hl=en\" target=\"_blank\" rel=\"noopener noreferrer\">Google Privacy Policy</a>. You can sign out of Play Games or delete game data in the Play Games app settings.</p>"
              "<h3>In-game purchases (Google Play)</h3>"
              '<p>Purchases use Google Play\'s payment system. The game checks with Google Play to confirm payment and restore permanent purchases. <strong>iFlag does not receive or store card numbers, billing addresses or other payment data.</strong> That processing follows the <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener noreferrer">Google Play Terms of Service</a> and the <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>'
              "<h3>Android automatic backup</h3>"
@@ -138,10 +141,11 @@ EN = {
             ("retention", "5. How long data is kept",
              "<ul>"
              "<li><strong>Game progress:</strong> stays on the device until you use \"Erase progress\" in the Options, clear the app data or uninstall the game.</li>"
+             "<li><strong>Cloud copy:</strong> stays in your Play Games account until you delete the game data in the Play Games app or your Google Account; each upload replaces the previous one.</li>"
              "<li><strong>Notifications:</strong> are canceled when you turn them off in the Options or in Android, and replaced every time you leave the game.</li>"
              "<li><strong>Ad and purchase data:</strong> kept by Unity and Google according to their own policies, settings and legal obligations.</li>"
              "<li><strong>Support messages:</strong> for as long as needed to resolve the request and, where applicable, to meet obligations or protect rights.</li>"
-             "</ul><p>Because progress lives only on the device, iFlag cannot recover or delete it remotely.</p>"),
+             "</ul><p>Because progress lives on the device and in your Google account, iFlag cannot recover or delete it remotely.</p>"),
             ("rights", "6. Your choices and rights",
              "<p>Under the LGPD and other applicable laws (such as US state privacy laws), you may request confirmation and access, correction, anonymization, blocking or deletion, portability, information about sharing, objection, withdrawal of consent and information about the consequences of not consenting.</p>"
              "<p>You can also act directly:</p><ul>"
@@ -195,7 +199,7 @@ EN = {
             ("ads", "5. Rewarded videos",
              "<p>Some buttons offer a bonus for watching a video. Videos are always optional, have a daily limit and are provided by third parties (Unity LevelPlay). We don't control ad content; if you find an inappropriate ad, let us know. If no video is available, the bonus may not be delivered at that moment.</p>"),
             ("progress", "6. Progress and data on the device",
-             "<p>Your progress is saved on your device. There is no server copy, and iFlag cannot recover it. Uninstalling the game, clearing app data, switching devices without a backup or using \"Erase progress\" permanently deletes it. Android automatic backup, when on, may help restore it.</p>"
+             "<p>Your progress is saved on your device and, if you are signed in to Google Play Games, in a copy in your account that the game offers when opened on a new device. iFlag keeps no server copy and cannot recover it. Without Play Games and without Android backup, uninstalling the game, clearing app data or using \"Erase progress\" permanently deletes it.</p>"
              "<p>Changing the device clock to speed up the game may cause unexpected results, including loss of bonuses.</p>"),
             ("updates", "7. Updates and availability",
              "<p>We may release updates to fix issues, adjust balance or add content. Some features may require the latest version. We may also change, suspend or end the game or parts of it, giving reasonable notice when a change affects permanent purchases.</p>"),
