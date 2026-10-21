@@ -1,0 +1,425 @@
+/* Império do Mercador: o site usa a paleta e as peças de interface do jogo (art/palette.px.js e ui_*.png).
+   Arte em pixel sempre em escala inteira e com image-rendering: pixelated. */
+
+@font-face {
+  font-family: "Jersey 10";
+  src: url("assets/fonts/Jersey10.ttf") format("truetype");
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+  --outline: #1e1410;
+  --ink: #2b1d16;
+  --ink-soft: #5c3620;
+  --white: #fff8ec;
+  --cream: #f5e2b8;
+  --parch-dark: #d4b682;
+  --wood: #8f5a32;
+  --wood-light: #d49a5a;
+  --wood-dark: #5c3620;
+  --wood-deep: #3a2216;
+  --wood-black: #2a1a14;
+  --gold: #ffe27a;
+  --gold-dark: #f0b43c;
+  --gold-deep: #c07028;
+  --green: #8ccf50;
+  --red: #e8504a;
+  --blue: #5aa0e8;
+  --sky-top: #7cc4f0;
+  --sky-bottom: #bfe6f5;
+  --px: 3px;
+  --wrap: min(1120px, calc(100% - 32px));
+  --pixel: "Jersey 10", "Trebuchet MS", sans-serif;
+  --text: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --outline-shadow:
+    -3px 0 0 var(--outline), 3px 0 0 var(--outline), 0 -3px 0 var(--outline), 0 3px 0 var(--outline),
+    -3px -3px 0 var(--outline), 3px -3px 0 var(--outline), -3px 3px 0 var(--outline), 3px 3px 0 var(--outline),
+    0 7px 0 rgb(0 0 0 / 35%);
+}
+
+@media (max-width: 640px) {
+  :root { --px: 2px; }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--cream);
+  font-family: var(--text);
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: var(--wood-black);
+  background-image:
+    linear-gradient(rgb(22 13 9 / 72%), rgb(22 13 9 / 72%)),
+    url("assets/img/sprites/tex_planks.png");
+  background-size: auto, 144px 48px;
+  image-rendering: pixelated;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg { display: block; max-width: 100%; }
+img { image-rendering: auto; }
+.brand-crest { border-radius: 10px; box-shadow: 0 0 0 2px var(--outline); }
+img.px { image-rendering: pixelated; height: auto; }
+a { color: var(--gold); text-underline-offset: 0.18em; }
+a:hover { color: var(--white); }
+:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+.wrap { width: var(--wrap); margin-inline: auto; }
+.narrow { width: min(820px, calc(100% - 32px)); }
+
+.skip-link {
+  position: fixed; z-index: 100; top: 12px; left: 12px; padding: 8px 14px;
+  background: var(--gold); color: var(--ink); font-weight: 700; border-radius: 4px;
+  transform: translateY(-200%);
+}
+.skip-link:focus { transform: none; }
+
+/* Peças 9-slice do jogo (borda de 8 px de arte, em 3x) --------------------------------------------------- */
+
+.parchment, .wood, .dark, .inset, .btn {
+  border: 0;
+  border-image-slice: 8 fill;
+  border-image-width: 24px;
+  border-image-repeat: stretch;
+  image-rendering: pixelated;
+}
+.parchment { border-image-source: url("assets/img/sprites/ui_parchment.png"); color: var(--ink); }
+.wood { border-image-source: url("assets/img/sprites/ui_wood.png"); }
+.dark { border-image-source: url("assets/img/sprites/ui_dark.png"); }
+.inset { border-image-source: url("assets/img/sprites/ui_inset.png"); }
+
+.card { padding: 30px 32px; }
+.parchment a { color: var(--wood-dark); font-weight: 600; }
+.parchment a:hover { color: var(--red); }
+
+/* Botões ------------------------------------------------------------------------------------------------- */
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+  min-height: 68px; padding: 10px 30px 14px;
+  font-family: var(--pixel); font-size: 30px; line-height: 1; letter-spacing: 0.5px;
+  text-decoration: none; white-space: nowrap;
+  transition: transform 120ms ease, filter 120ms ease;
+}
+.btn:hover { transform: translateY(-2px); filter: brightness(1.08); }
+.btn:active { transform: translateY(2px) scale(0.98); }
+.btn-gold { border-image-source: url("assets/img/sprites/ui_btn_gold.png"); color: var(--ink); }
+.btn-blue { border-image-source: url("assets/img/sprites/ui_btn_blue.png"); color: var(--white); text-shadow: 0 3px 0 rgb(0 0 0 / 30%); }
+.btn-gold:hover { color: var(--ink); }
+.btn-blue:hover { color: var(--white); }
+.btn-small { min-height: 54px; padding: 8px 22px 12px; font-size: 24px; }
+.btn-ico { width: 20px; height: 24px; flex: none; }
+
+/* Animações de quadros (sprite sheets do jogo) ------------------------------------------------------------ */
+
+.anim {
+  display: inline-block; flex: none;
+  width: var(--w); height: var(--h);
+  background-image: var(--img);
+  background-repeat: no-repeat;
+  background-size: var(--sheet) var(--h);
+  image-rendering: pixelated;
+  animation: frames var(--dur) steps(var(--frames)) infinite;
+}
+@keyframes frames { to { background-position: calc(-1 * var(--sheet)) 0; } }
+
+/* Cabeçalho ---------------------------------------------------------------------------------------------- */
+
+.site-header {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--wood-black);
+  border-bottom: 3px solid var(--gold-deep);
+  box-shadow: 0 3px 0 var(--outline), 0 8px 18px rgb(0 0 0 / 35%);
+}
+.header-inner { display: flex; align-items: center; gap: 12px 16px; min-height: 72px; }
+.brand {
+  display: inline-flex; align-items: center; gap: 12px; flex: none;
+  color: var(--gold); text-decoration: none;
+  font-family: var(--pixel); font-size: 28px; line-height: 1;
+  text-shadow: -2px 0 0 var(--outline), 2px 0 0 var(--outline), 0 -2px 0 var(--outline), 0 2px 0 var(--outline), 0 4px 0 rgb(0 0 0 / 35%);
+}
+.brand:hover { color: var(--white); }
+.header-nav { display: flex; align-items: center; gap: 4px; margin-left: auto; font-family: var(--pixel); font-size: 24px; }
+.header-nav > a {
+  padding: 6px 12px; color: var(--cream); text-decoration: none; border-radius: 3px;
+}
+.header-nav > a:hover, .header-nav > a[aria-current="page"] { color: var(--gold); background: rgb(255 226 122 / 8%); }
+.lang-switch { display: inline-flex; flex: none; border: 2px solid var(--wood-dark); border-radius: 4px; overflow: hidden; font-family: var(--pixel); }
+.lang-switch > * { padding: 4px 10px; font-size: 20px; line-height: 1.2; text-decoration: none; }
+.lang-cur { background: var(--gold-deep); color: var(--white); }
+.lang-link { color: var(--cream); }
+.lang-link:hover { background: var(--wood-deep); color: var(--gold); }
+
+@media (max-width: 900px) {
+  .header-inner { flex-wrap: wrap; padding-block: 10px 6px; gap: 6px 16px; }
+  .header-nav { order: 3; width: 100%; margin-left: 0; overflow-x: auto; scrollbar-width: none; padding-bottom: 4px; }
+  .header-nav::-webkit-scrollbar { display: none; }
+  .header-nav > a { padding: 4px 10px; flex: none; }
+  .lang-switch { order: 2; margin-left: auto; }
+  .brand { font-size: 22px; gap: 10px; }
+  .brand-crest { width: 40px; height: 40px; }
+  html { scroll-padding-top: 120px; }
+}
+
+/* Títulos -------------------------------------------------------------------------------------------------- */
+
+.title {
+  margin: 0 0 28px; color: var(--gold);
+  font-family: var(--pixel); font-weight: 400; font-size: clamp(40px, 6vw, 60px); line-height: 1.05;
+  letter-spacing: 0.5px; text-align: center;
+  text-shadow: var(--outline-shadow);
+}
+.title-ink {
+  margin: 0 0 12px; color: var(--wood-dark);
+  font-family: var(--pixel); font-weight: 400; font-size: clamp(32px, 4.4vw, 42px); line-height: 1.05;
+}
+.section { padding-block: 64px; }
+.section-hint { margin: -14px 0 18px; text-align: center; color: var(--parch-dark); font-size: 16px; }
+@media (min-width: 900px) { .section-hint { display: none; } }
+
+/* Herói: céu, logo e a rua do jogo com heróis andando -------------------------------------------------------- */
+
+.hero {
+  position: relative; overflow: hidden;
+  display: flex; flex-direction: column;
+  background: linear-gradient(var(--sky-top), var(--sky-bottom) 78%);
+  border-bottom: 6px solid var(--outline);
+}
+.hero-sky { position: absolute; inset: 0; pointer-events: none; }
+.cloud { position: absolute; left: 0; animation: drift linear infinite; }
+.cloud-a { top: 9%; animation-duration: 95s; animation-delay: -20s; }
+.cloud-b { top: 24%; animation-duration: 120s; animation-delay: -70s; opacity: 0.9; }
+.cloud-c { top: 40%; animation-duration: 140s; animation-delay: -105s; opacity: 0.8; }
+@keyframes drift { from { transform: translateX(-220px); } to { transform: translateX(calc(100vw + 40px)); } }
+
+.hero-content {
+  position: relative; z-index: 2;
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  padding-block: 40px 28px;
+}
+.hero-logo { margin: 0; }
+.hero-logo img { width: min(486px, 86vw); height: auto; image-rendering: pixelated; filter: drop-shadow(0 8px 0 rgb(30 20 16 / 25%)); }
+.hero-tag {
+  margin: 10px 0 22px; color: var(--white);
+  font-family: var(--pixel); font-size: clamp(28px, 4.2vw, 38px); line-height: 1.1;
+  text-shadow: var(--outline-shadow);
+}
+.hero-cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+.badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 18px; margin: 22px 0 0; padding: 0; list-style: none; }
+.badges li {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--pixel); font-size: 24px; line-height: 1; color: var(--white);
+  text-shadow: -2px 0 0 var(--outline), 2px 0 0 var(--outline), 0 -2px 0 var(--outline), 0 2px 0 var(--outline);
+}
+
+.hero-street { position: relative; height: calc(124 * var(--px)); margin-top: auto; }
+.layer {
+  position: absolute; inset: 0;
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  background-size: calc(240 * var(--px)) 100%;
+  image-rendering: pixelated;
+}
+.layer-mountains { background-image: url("assets/img/sprites/bg_mountains.png"); }
+.layer-houses { background-image: url("assets/img/sprites/bg_houses.png"); }
+.layer-street { background-image: url("assets/img/sprites/bg_street.png"); }
+.walker {
+  position: absolute; left: 0; bottom: calc(10 * var(--px)); z-index: 1;
+  animation: walk var(--walk-time) linear infinite;
+  animation-delay: var(--walk-delay);
+}
+.walker .anim { width: calc(36 * var(--px)); height: calc(62 * var(--px)); background-size: calc(216 * var(--px)) 100%; }
+.walker .anim { animation-name: walkframes; }
+@keyframes walkframes { to { background-position: calc(-216 * var(--px)) 0; } }
+@keyframes walk { from { transform: translateX(-140px); } to { transform: translateX(calc(100vw + 20px)); } }
+
+/* Introdução, passos e recursos ----------------------------------------------------------------------------- */
+
+.intro { padding-top: 56px; }
+.intro-card { display: flex; align-items: center; gap: 32px; }
+.intro-card p { margin: 0; font-size: 19px; }
+.intro-art { flex: none; display: grid; place-items: center; width: 160px; }
+@media (max-width: 640px) {
+  .intro-card { flex-direction: column; text-align: center; gap: 12px; }
+}
+
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin: 0; padding: 0; list-style: none; }
+.step { position: relative; text-align: center; padding-top: 36px; }
+.step h3, .feature h3, .fair-list h3, .topics h3 {
+  margin: 0 0 6px; font-family: var(--pixel); font-weight: 400; font-size: 32px; line-height: 1.05;
+}
+.step h3, .feature h3, .topics h3 { color: var(--wood-dark); }
+.step p, .feature p, .fair-list p, .topics p { margin: 0; font-size: 17px; }
+.step-num {
+  position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+  display: grid; place-items: center; width: 44px; height: 44px;
+  background: var(--gold-deep); color: var(--white); border: 3px solid var(--outline); border-radius: 50%;
+  font-family: var(--pixel); font-size: 30px; line-height: 1;
+}
+.step-art { display: grid; place-items: center; height: 120px; margin-bottom: 10px; }
+@media (max-width: 860px) { .steps { grid-template-columns: 1fr; gap: 34px; } }
+
+.features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin: 0; padding: 0; list-style: none; }
+.feature { display: flex; align-items: center; gap: 24px; }
+.feature-art { flex: none; display: grid; place-items: center; width: 132px; height: 132px; }
+@media (max-width: 860px) { .features { grid-template-columns: 1fr; } }
+@media (max-width: 520px) {
+  .feature { flex-direction: column; text-align: center; gap: 8px; }
+  .feature-art { height: auto; min-height: 100px; }
+}
+
+/* Capturas -------------------------------------------------------------------------------------------------- */
+
+.shots {
+  display: flex; gap: 22px; margin: 0; padding: 8px max(16px, calc((100vw - 1120px) / 2)) 24px; list-style: none;
+  overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-color: var(--gold-deep) var(--wood-deep);
+}
+.shots li { flex: 0 0 auto; width: clamp(220px, 62vw, 270px); scroll-snap-align: center; }
+.shots figure { margin: 0; }
+.shots img {
+  width: 100%; height: auto; border-radius: 6px;
+  box-shadow: 0 0 0 4px var(--outline), 0 0 0 8px var(--gold-deep), 0 0 0 11px var(--outline), 0 14px 22px rgb(0 0 0 / 45%);
+}
+.shots figcaption { margin-top: 18px; text-align: center; font-family: var(--pixel); font-size: 24px; line-height: 1.1; color: var(--cream); }
+
+/* Jogo justo ------------------------------------------------------------------------------------------------ */
+
+.fair { padding: 40px 36px; }
+.fair-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px 34px; margin: 0; padding: 0; list-style: none; }
+.fair-list li { display: flex; align-items: flex-start; gap: 16px; }
+.ico { flex: none; display: flex; justify-content: center; width: 66px; }
+.fair-list .ico { margin-top: 4px; }
+.fair-list h3 { color: var(--gold); text-shadow: 0 3px 0 rgb(0 0 0 / 35%); }
+.fair-list p { color: var(--cream); }
+@media (max-width: 760px) { .fair-list { grid-template-columns: 1fr; } }
+
+/* Dúvidas --------------------------------------------------------------------------------------------------- */
+
+.faq { display: grid; gap: 14px; }
+.faq-item {
+  color: var(--ink); background: var(--cream);
+  border: 3px solid var(--outline); border-radius: 4px;
+  box-shadow: inset 0 -5px 0 var(--parch-dark), 0 5px 0 rgb(0 0 0 / 35%);
+}
+.faq-item summary {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 14px 20px; cursor: pointer; list-style: none;
+  font-family: var(--pixel); font-size: 28px; line-height: 1.1; color: var(--wood-dark);
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: "+"; flex: none; font-size: 36px; color: var(--gold-deep); }
+.faq-item[open] summary::after { content: "−"; }
+.faq-answer { padding: 0 20px 18px; }
+.faq-answer p { margin: 0; font-size: 17px; }
+.faq-answer a { color: var(--wood-dark); font-weight: 600; }
+
+/* Chamada final --------------------------------------------------------------------------------------------- */
+
+.final { padding-bottom: 80px; }
+.final-inner { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.final-crest { margin-bottom: 14px; }
+.final-inner .title { margin-bottom: 10px; }
+.final-inner > p { margin: 0 0 24px; color: var(--cream); }
+.final-coins { display: flex; gap: 14px; margin-top: 28px; }
+
+/* Rodapé ---------------------------------------------------------------------------------------------------- */
+
+.site-footer { background: var(--outline); border-top: 3px solid var(--gold-deep); padding-top: 44px; color: var(--parch-dark); }
+.footer-inner { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 30px; }
+.footer-brand p { margin: 14px 0 18px; font-size: 16px; max-width: 34ch; }
+.footer-col { display: flex; flex-direction: column; gap: 8px; }
+.footer-col h2 { margin: 6px 0 6px; font-family: var(--pixel); font-weight: 400; font-size: 26px; color: var(--gold); }
+.footer-col a { color: var(--cream); text-decoration: none; font-size: 16px; }
+.footer-col a:hover, .footer-col a[aria-current="page"] { color: var(--gold); text-decoration: underline; }
+.footer-bottom { margin-top: 36px; padding-block: 18px 26px; border-top: 2px solid var(--wood-deep); font-size: 14px; }
+.footer-bottom p { margin: 4px 0; }
+.footer-langs a { color: var(--cream); }
+@media (max-width: 860px) {
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+  .footer-brand { grid-column: 1 / -1; }
+}
+
+/* Páginas legais e contato ---------------------------------------------------------------------------------- */
+
+.legal-hero { padding-block: 48px 28px; }
+.legal-hero .title { text-align: left; margin-bottom: 16px; }
+.legal-hero-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 36px; align-items: center; }
+.lead { margin: 0 0 14px; font-size: 20px; color: var(--cream); max-width: 60ch; }
+.doc-meta { margin: 0; font-size: 15px; color: var(--parch-dark); }
+.ledger { display: grid; gap: 14px; margin: 0; }
+.ledger div { display: flex; align-items: center; gap: 16px; }
+.ledger dt { flex: none; display: flex; justify-content: center; width: 66px; }
+.ledger dd { margin: 0; font-size: 16px; line-height: 1.45; }
+@media (max-width: 860px) { .legal-hero-grid { grid-template-columns: 1fr; } }
+
+.legal-layout { display: grid; grid-template-columns: 270px 1fr; gap: 26px; align-items: start; padding-bottom: 72px; }
+.toc { position: sticky; top: 96px; padding: 24px 26px; color: var(--cream); font-size: 15px; }
+.toc strong { display: block; margin-bottom: 8px; font-family: var(--pixel); font-weight: 400; font-size: 26px; color: var(--gold); }
+.toc ol { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
+.toc a { color: var(--cream); text-decoration: none; }
+.toc a:hover { color: var(--gold); text-decoration: underline; }
+@media (max-width: 960px) {
+  .legal-layout { grid-template-columns: 1fr; }
+  .toc { position: static; }
+}
+
+.legal-doc { padding: 36px 40px 44px; font-size: 17px; }
+@media (max-width: 640px) { .legal-doc, .card { padding: 26px 22px; } }
+.summary {
+  margin-bottom: 30px; padding: 18px 22px;
+  background: #ead1a0; border: 3px solid var(--parch-dark); border-radius: 4px;
+}
+.summary h2 { margin: 0 0 6px; font-family: var(--pixel); font-weight: 400; font-size: 30px; color: var(--wood-dark); }
+.summary p { margin: 0; }
+.legal-section + .legal-section { margin-top: 30px; padding-top: 26px; border-top: 2px dashed var(--parch-dark); }
+.legal-section h2 { margin: 0 0 12px; font-family: var(--pixel); font-weight: 400; font-size: 32px; line-height: 1.1; color: var(--wood-dark); }
+.legal-section h3 { margin: 22px 0 6px; font-size: 18px; color: var(--ink); }
+.legal-section p, .legal-section li { margin: 0 0 10px; }
+.legal-section ul { padding-left: 22px; margin: 0 0 10px; }
+.note { margin-top: 16px; padding: 12px 16px; border-left: 6px solid var(--gold-deep); background: rgb(240 180 60 / 16%); }
+.note p { margin: 0; }
+.table-scroll { overflow-x: auto; margin: 4px 0 8px; }
+.data-table { width: 100%; min-width: 620px; border-collapse: collapse; font-size: 15px; line-height: 1.45; }
+.data-table th, .data-table td { padding: 10px 12px; text-align: left; vertical-align: top; border: 2px solid var(--parch-dark); }
+.data-table th { background: var(--wood-dark); color: var(--cream); font-weight: 600; }
+.data-table td:first-child { font-weight: 700; white-space: nowrap; }
+.contact-panel {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px;
+  margin-top: 12px; padding: 16px 20px; background: #ead1a0; border: 3px solid var(--parch-dark); border-radius: 4px;
+}
+.contact-panel p { margin: 0; }
+
+.contact-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 36px; align-items: center; }
+.contact-card { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; }
+.contact-label { margin: 8px 0 0; font-size: 15px; color: var(--ink-soft); }
+.contact-email { font-family: var(--pixel); font-size: 34px; line-height: 1.1; word-break: break-all; }
+.contact-card .btn { margin-top: 12px; }
+.contact-reply { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+.contact-body { display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; align-items: start; padding-bottom: 72px; }
+.topics { display: grid; gap: 18px; margin: 8px 0 0; padding: 0; list-style: none; }
+.topics li { display: flex; gap: 14px; align-items: flex-start; }
+.topics .ico { margin-top: 2px; }
+.topics h3 { font-size: 28px; }
+.include { margin: 8px 0 0; padding-left: 22px; }
+.include li { margin-bottom: 8px; }
+@media (max-width: 860px) {
+  .contact-grid, .contact-body { grid-template-columns: 1fr; }
+}
+
+/* Movimento reduzido: tudo parado, heróis espalhados pela rua. ------------------------------------------------ */
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .anim, .cloud, .walker { animation: none !important; }
+  .walker:nth-of-type(1) { transform: translateX(8vw); }
+  .walker:nth-of-type(2) { transform: translateX(30vw); }
+  .walker:nth-of-type(3) { transform: translateX(55vw); }
+  .walker:nth-of-type(4) { transform: translateX(78vw); }
+  .btn { transition: none; }
+}

@@ -1,0 +1,148 @@
+{
+ "frames": {
+  "hero_warrior_walk_0": {
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 36,
+    "h": 62
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 36,
+    "h": 62
+   },
+   "sourceSize": {
+    "w": 36,
+    "h": 62
+   },
+   "duration": 100
+  },
+  "hero_warrior_walk_1": {
+   "frame": {
+    "x": 36,
+    "y": 0,
+    "w": 36,
+    "h": 62
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 36,
+    "h": 62
+   },
+   "sourceSize": {
+    "w": 36,
+    "h": 62
+   },
+   "duration": 100
+  },
+  "hero_warrior_walk_2": {
+   "frame": {
+    "x": 72,
+    "y": 0,
+    "w": 36,
+    "h": 62
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 36,
+    "h": 62
+   },
+   "sourceSize": {
+    "w": 36,
+    "h": 62
+   },
+   "duration": 100
+  },
+  "hero_warrior_walk_3": {
+   "frame": {
+    "x": 108,
+    "y": 0,
+    "w": 36,
+    "h": 62
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 36,
+    "h": 62
+   },
+   "sourceSize": {
+    "w": 36,
+    "h": 62
+   },
+   "duration": 100
+  },
+  "hero_warrior_walk_4": {
+   "frame": {
+    "x": 144,
+    "y": 0,
+    "w": 36,
+    "h": 62
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 36,
+    "h": 62
+   },
+   "sourceSize": {
+    "w": 36,
+    "h": 62
+   },
+   "duration": 100
+  },
+  "hero_warrior_walk_5": {
+   "frame": {
+    "x": 180,
+    "y": 0,
+    "w": 36,
+    "h": 62
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 36,
+    "h": 62
+   },
+   "sourceSize": {
+    "w": 36,
+    "h": 62
+   },
+   "duration": 100
+  }
+ },
+ "meta": {
+  "app": "pxl",
+  "image": "hero_warrior_walk.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 216,
+   "h": 62
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "hero_warrior_walk",
+    "from": 0,
+    "to": 5,
+    "direction": "forward"
+   }
+  ]
+ }
+}

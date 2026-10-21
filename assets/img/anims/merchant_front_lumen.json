@@ -1,0 +1,106 @@
+{
+ "frames": {
+  "merchant_front_lumen_0": {
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 28,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 28,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 28,
+    "h": 34
+   },
+   "duration": 1100
+  },
+  "merchant_front_lumen_1": {
+   "frame": {
+    "x": 28,
+    "y": 0,
+    "w": 28,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 28,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 28,
+    "h": 34
+   },
+   "duration": 500
+  },
+  "merchant_front_lumen_2": {
+   "frame": {
+    "x": 56,
+    "y": 0,
+    "w": 28,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 28,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 28,
+    "h": 34
+   },
+   "duration": 120
+  },
+  "merchant_front_lumen_3": {
+   "frame": {
+    "x": 84,
+    "y": 0,
+    "w": 28,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 28,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 28,
+    "h": 34
+   },
+   "duration": 600
+  }
+ },
+ "meta": {
+  "app": "pxl",
+  "image": "merchant_front_lumen.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 112,
+   "h": 34
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "merchant_front_lumen",
+    "from": 0,
+    "to": 3,
+    "direction": "forward"
+   }
+  ]
+ }
+}

@@ -1,0 +1,190 @@
+{
+ "frames": {
+  "boss_goblin_king_0": {
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 66,
+    "h": 66
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 66,
+    "h": 66
+   },
+   "sourceSize": {
+    "w": 66,
+    "h": 66
+   },
+   "duration": 167
+  },
+  "boss_goblin_king_1": {
+   "frame": {
+    "x": 66,
+    "y": 0,
+    "w": 66,
+    "h": 66
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 66,
+    "h": 66
+   },
+   "sourceSize": {
+    "w": 66,
+    "h": 66
+   },
+   "duration": 167
+  },
+  "boss_goblin_king_2": {
+   "frame": {
+    "x": 132,
+    "y": 0,
+    "w": 66,
+    "h": 66
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 66,
+    "h": 66
+   },
+   "sourceSize": {
+    "w": 66,
+    "h": 66
+   },
+   "duration": 167
+  },
+  "boss_goblin_king_3": {
+   "frame": {
+    "x": 198,
+    "y": 0,
+    "w": 66,
+    "h": 66
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 66,
+    "h": 66
+   },
+   "sourceSize": {
+    "w": 66,
+    "h": 66
+   },
+   "duration": 167
+  },
+  "boss_goblin_king_4": {
+   "frame": {
+    "x": 264,
+    "y": 0,
+    "w": 66,
+    "h": 66
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 66,
+    "h": 66
+   },
+   "sourceSize": {
+    "w": 66,
+    "h": 66
+   },
+   "duration": 167
+  },
+  "boss_goblin_king_5": {
+   "frame": {
+    "x": 330,
+    "y": 0,
+    "w": 66,
+    "h": 66
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 66,
+    "h": 66
+   },
+   "sourceSize": {
+    "w": 66,
+    "h": 66
+   },
+   "duration": 167
+  },
+  "boss_goblin_king_6": {
+   "frame": {
+    "x": 396,
+    "y": 0,
+    "w": 66,
+    "h": 66
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 66,
+    "h": 66
+   },
+   "sourceSize": {
+    "w": 66,
+    "h": 66
+   },
+   "duration": 167
+  },
+  "boss_goblin_king_7": {
+   "frame": {
+    "x": 462,
+    "y": 0,
+    "w": 66,
+    "h": 66
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 66,
+    "h": 66
+   },
+   "sourceSize": {
+    "w": 66,
+    "h": 66
+   },
+   "duration": 167
+  }
+ },
+ "meta": {
+  "app": "pxl",
+  "image": "boss_goblin_king.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 528,
+   "h": 66
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "boss_goblin_king",
+    "from": 0,
+    "to": 7,
+    "direction": "forward"
+   }
+  ]
+ }
+}

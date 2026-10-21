@@ -1,0 +1,127 @@
+{
+ "frames": {
+  "merchant_idle_0": {
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 28,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 28,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 28,
+    "h": 34
+   },
+   "duration": 900
+  },
+  "merchant_idle_1": {
+   "frame": {
+    "x": 28,
+    "y": 0,
+    "w": 28,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 28,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 28,
+    "h": 34
+   },
+   "duration": 500
+  },
+  "merchant_idle_2": {
+   "frame": {
+    "x": 56,
+    "y": 0,
+    "w": 28,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 28,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 28,
+    "h": 34
+   },
+   "duration": 700
+  },
+  "merchant_idle_3": {
+   "frame": {
+    "x": 84,
+    "y": 0,
+    "w": 28,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 28,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 28,
+    "h": 34
+   },
+   "duration": 120
+  },
+  "merchant_idle_4": {
+   "frame": {
+    "x": 112,
+    "y": 0,
+    "w": 28,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 28,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 28,
+    "h": 34
+   },
+   "duration": 600
+  }
+ },
+ "meta": {
+  "app": "pxl",
+  "image": "merchant_idle.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 140,
+   "h": 34
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "merchant_idle",
+    "from": 0,
+    "to": 4,
+    "direction": "forward"
+   }
+  ]
+ }
+}
