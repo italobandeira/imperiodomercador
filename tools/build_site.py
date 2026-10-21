@@ -35,7 +35,7 @@ UPDATED = "2026-10-21"
 
 # Português na raiz; os outros idiomas em subpastas com os mesmos nomes de arquivo.
 LANGS = [("pt", PT, ""), ("en", EN, "en/"), ("es", ES, "es/")]
-PAGES = ["index.html", "privacy.html", "terms.html", "contact.html"]
+PAGES = ["index.html", "privacy.html", "terms.html", "delete.html", "contact.html"]
 
 SPRITES = [
     "logo_crest", "cloud_1", "cloud_2", "portrait_nix", "portrait_pip", "bust_warrior", "album_aldric",
@@ -235,6 +235,7 @@ def footer(L, page, prefix, root):
         <h2>{esc(u["footer_legal"])}</h2>
         <a href="privacy.html"{cur("privacy.html")}>{esc(u["nav_privacy"])}</a>
         <a href="terms.html"{cur("terms.html")}>{esc(u["nav_terms"])}</a>
+        <a href="delete.html"{cur("delete.html")}>{esc(u["nav_delete"])}</a>
       </nav>
     </div>
     <div class="wrap footer-bottom">
@@ -453,6 +454,7 @@ def write_pages():
             "index.html": home_page(L, code, prefix, root),
             "privacy.html": legal_page(L, code, prefix, root, "privacy", "privacy.html"),
             "terms.html": legal_page(L, code, prefix, root, "terms", "terms.html"),
+            "delete.html": legal_page(L, code, prefix, root, "delete", "delete.html"),
             "contact.html": contact_page(L, code, prefix, root),
         }
         for name, text in files.items():

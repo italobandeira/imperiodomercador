@@ -1,6 +1,7 @@
 # Textos del sitio en español latinoamericano (es-419). Misma estructura que content_pt.py.
 
 EMAIL = "iflagdev@gmail.com"
+UNITY = "https://unity.com/legal/game-player-and-app-user-privacy-policy"
 
 ES = {
     "html_lang": "es-419",
@@ -15,6 +16,7 @@ ES = {
         "nav_screens": "Pantallas",
         "nav_faq": "Preguntas",
         "nav_privacy": "Privacidad",
+        "nav_delete": "Eliminar datos",
         "nav_terms": "Términos",
         "nav_contact": "Contacto",
         "back_home": "Volver al sitio",
@@ -215,6 +217,41 @@ ES = {
             ("contacto", "12. Contáctanos",
              "<p>Dudas sobre estos Términos, las compras o el funcionamiento del juego:</p>"
              '<div class="contact-panel"><p><b>Italo Bandeira, iFlag</b><br>Soporte de Imperio del Mercador</p><a href="mailto:' + EMAIL + '">' + EMAIL + "</a></div>"),
+        ],
+    },
+    "delete": {
+        "title": "Eliminar tus datos",
+        "description": "Cómo pedir la eliminación de tus datos de Imperio del Mercader (iFlag): progreso en el dispositivo, la copia en Google Play Juegos, datos de anuncios y mensajes de soporte.",
+        "lead": "Imperio del Mercader, de iFlag (Italo Bandeira), no tiene cuentas ni servidor propio. Aquí ves cómo borrar cada tipo de dato, qué se borra y qué se conserva.",
+        "ledger": [
+            ("phone", "Progreso en el dispositivo: lo borras tú mismo, al instante, en las Opciones del juego."),
+            ("crown", "Copia en la nube: se borra en la app Play Juegos o pidiéndonoslo."),
+            ("ad", "Respondemos las solicitudes por correo en hasta 15 días hábiles."),
+        ],
+        "summary_title": "En pocas palabras",
+        "summary": "Para borrar todo: usa \"Borrar progreso\" en las Opciones del juego, borra los datos del juego en la app Play Juegos y restablece el ID de publicidad de Android. Si prefieres, escribe a iflagdev@gmail.com con el asunto \"Eliminar datos - Imperio del Mercader\" y te guiamos y confirmamos cada paso.",
+        "sections": [
+            ("pasos", "1. Cómo pedir la eliminación",
+             "<ol>"
+             "<li><strong>En el juego:</strong> abre Opciones y toca \"Borrar progreso\". El guardado del dispositivo se borra al instante y el juego empieza de cero.</li>"
+             "<li><strong>Copia en Google Play Juegos:</strong> en la app Play Juegos, abre tu perfil, ve a Configuración y elige borrar los datos de este juego (o toda tu cuenta de Play Juegos).</li>"
+             "<li><strong>Datos de anuncios:</strong> en la configuración de Android, en Google &gt; Anuncios, restablece o elimina el ID de publicidad. Así se corta el vínculo entre el dispositivo y los datos que ya recopiló Unity (LevelPlay).</li>"
+             '<li><strong>Por correo:</strong> escribe a <a href="mailto:iflagdev@gmail.com?subject=Eliminar%20datos%20-%20Imperio%20del%20Mercader">iflagdev@gmail.com</a> con el asunto \"Eliminar datos - Imperio del Mercader\". Dinos qué datos quieres borrar; si es la copia de Play Juegos, incluye tu nombre de jugador. Respondemos en hasta 15 días hábiles y confirmamos cuando termine.</li>'
+             "</ol>"),
+            ("borrados", "2. Qué se borra",
+             "<ul>"
+             "<li><strong>Progreso del juego en el dispositivo</strong> (oro, tiendas, héroes, gemas, configuración): se borra al instante con \"Borrar progreso\", al borrar los datos de la app o al desinstalar el juego.</li>"
+             "<li><strong>Copia del progreso en Google Play Juegos:</strong> la borra Google cuando eliminas los datos del juego en la app Play Juegos.</li>"
+             "<li><strong>Mensajes de soporte:</strong> se borran en hasta 30 días después de la solicitud.</li>"
+             "</ul>"),
+            ("conservados", "3. Qué se puede conservar",
+             "<ul>"
+             "<li><strong>Registros de compra:</strong> quedan en Google Play, vinculados a tu Cuenta de Google, por el plazo que exijan la ley y las políticas de Google. iFlag no tiene copia. Las compras permanentes siguen valiendo y vuelven si instalas el juego de nuevo.</li>"
+             '<li><strong>Datos de anuncios:</strong> los conserva Unity Technologies según la <a href="' + UNITY + '" target="_blank" rel="noopener noreferrer">política de privacidad de Unity</a>, que explica cómo pedirle la eliminación directamente. Restablecer el ID de publicidad evita que los datos nuevos se vinculen con los anteriores.</li>'
+             "<li><strong>Obligaciones legales:</strong> lo que la ley exija guardar (por ejemplo, la prueba de que se atendió una solicitud) se conserva solo el tiempo necesario.</li>"
+             "</ul>"),
+            ("contacto", "4. Contáctanos",
+             '<div class="contact-panel"><p><b>Italo Bandeira, iFlag</b><br>Eliminación de datos de Imperio del Mercader</p><a href="mailto:iflagdev@gmail.com">iflagdev@gmail.com</a></div>'),
         ],
     },
     "contact": {

@@ -2,6 +2,7 @@
 # Trechos com HTML (links, negrito) ficam como estão; o resto é escapado pelo build.
 
 EMAIL = "iflagdev@gmail.com"
+UNITY = "https://unity.com/legal/game-player-and-app-user-privacy-policy"
 
 PT = {
     "html_lang": "pt-BR",
@@ -16,6 +17,7 @@ PT = {
         "nav_screens": "Telas",
         "nav_faq": "Dúvidas",
         "nav_privacy": "Privacidade",
+        "nav_delete": "Excluir dados",
         "nav_terms": "Termos",
         "nav_contact": "Contato",
         "back_home": "Voltar ao site",
@@ -216,6 +218,41 @@ PT = {
             ("contato", "12. Fale conosco",
              "<p>Dúvidas sobre estes Termos, compras ou o funcionamento do jogo:</p>"
              '<div class="contact-panel"><p><b>Italo Bandeira, iFlag</b><br>Suporte do Império do Mercador</p><a href="mailto:' + EMAIL + '">' + EMAIL + "</a></div>"),
+        ],
+    },
+    "delete": {
+        "title": "Excluir seus dados",
+        "description": "Como pedir a exclusão dos seus dados do Império do Mercador (iFlag): progresso no aparelho, cópia no Google Play Games, dados de anúncios e mensagens de suporte.",
+        "lead": "O Império do Mercador, da iFlag (Italo Bandeira), não tem conta nem servidor próprio. Veja abaixo como apagar cada tipo de dado, o que é apagado e o que fica guardado.",
+        "ledger": [
+            ("phone", "Progresso no aparelho: você mesmo apaga, na hora, nas Opções do jogo."),
+            ("crown", "Cópia na nuvem: apagada no app Play Games ou por pedido a nós."),
+            ("ad", "Pedidos por e-mail são respondidos em até 15 dias úteis."),
+        ],
+        "summary_title": "Em poucas palavras",
+        "summary": "Para apagar tudo: use \"Apagar progresso\" nas Opções do jogo, apague os dados do jogo no app Play Games e redefina o ID de publicidade do Android. Se preferir, escreva para iflagdev@gmail.com com o assunto \"Excluir dados - Império do Mercador\" e nós orientamos e confirmamos cada etapa.",
+        "sections": [
+            ("passos", "1. Como pedir a exclusão",
+             "<ol>"
+             "<li><strong>No jogo:</strong> abra Opções e toque em \"Apagar progresso\". O save do aparelho é apagado na hora e o jogo recomeça do zero.</li>"
+             "<li><strong>Cópia no Google Play Games:</strong> no app Play Games, abra o seu perfil, vá em Configurações e escolha excluir os dados deste jogo (ou a conta do Play Games inteira).</li>"
+             "<li><strong>Dados de anúncios:</strong> nas configurações do Android, em Google &gt; Anúncios, redefina ou exclua o ID de publicidade. Isso desliga o vínculo entre o aparelho e os dados já coletados pela Unity (LevelPlay).</li>"
+             '<li><strong>Por e-mail:</strong> escreva para <a href="mailto:' + 'iflagdev@gmail.com' + '?subject=Excluir%20dados%20-%20Imp%C3%A9rio%20do%20Mercador">iflagdev@gmail.com</a> com o assunto \"Excluir dados - Império do Mercador\". Diga quais dados quer apagar; se for a cópia do Play Games, informe o nome de jogador. Respondemos em até 15 dias úteis e confirmamos quando terminar.</li>'
+             "</ol>"),
+            ("apagados", "2. O que é apagado",
+             "<ul>"
+             "<li><strong>Progresso do jogo no aparelho</strong> (ouro, lojas, heróis, gemas, configurações): apagado na hora pelo botão \"Apagar progresso\", ao limpar os dados do app ou ao desinstalar o jogo.</li>"
+             "<li><strong>Cópia do progresso no Google Play Games:</strong> apagada pelo Google quando você exclui os dados do jogo no app Play Games.</li>"
+             "<li><strong>Mensagens de suporte:</strong> apagadas em até 30 dias depois do pedido.</li>"
+             "</ul>"),
+            ("mantidos", "3. O que pode ser mantido",
+             "<ul>"
+             "<li><strong>Registros de compra:</strong> ficam com o Google Play, vinculados à sua Conta Google, pelo prazo que a lei e as políticas do Google exigem. A iFlag não tem cópia deles. As compras permanentes continuam valendo e voltam se você instalar o jogo de novo.</li>"
+             '<li><strong>Dados de anúncios:</strong> são guardados pela Unity Technologies segundo a <a href="' + UNITY + '" target="_blank" rel="noopener noreferrer">política de privacidade da Unity</a>, que explica como pedir a exclusão diretamente a ela. Redefinir o ID de publicidade impede que novos dados sejam ligados aos antigos.</li>'
+             "<li><strong>Obrigações legais:</strong> o que a lei exigir guardar (por exemplo, a prova de que um pedido foi atendido) é mantido só pelo tempo necessário.</li>"
+             "</ul>"),
+            ("contato", "4. Fale conosco",
+             '<div class="contact-panel"><p><b>Italo Bandeira, iFlag</b><br>Exclusão de dados do Império do Mercador</p><a href="mailto:iflagdev@gmail.com">iflagdev@gmail.com</a></div>'),
         ],
     },
     "contact": {

@@ -1,6 +1,7 @@
 # Site copy in English (en-US). Same structure as content_pt.py.
 
 EMAIL = "iflagdev@gmail.com"
+UNITY = "https://unity.com/legal/game-player-and-app-user-privacy-policy"
 
 EN = {
     "html_lang": "en",
@@ -15,6 +16,7 @@ EN = {
         "nav_screens": "Screens",
         "nav_faq": "FAQ",
         "nav_privacy": "Privacy",
+        "nav_delete": "Delete data",
         "nav_terms": "Terms",
         "nav_contact": "Contact",
         "back_home": "Back to site",
@@ -215,6 +217,41 @@ EN = {
             ("contact", "12. Contact us",
              "<p>Questions about these Terms, purchases or how the game works:</p>"
              '<div class="contact-panel"><p><b>Italo Bandeira, iFlag</b><br>Empire of the Merchant support</p><a href="mailto:' + EMAIL + '">' + EMAIL + "</a></div>"),
+        ],
+    },
+    "delete": {
+        "title": "Delete your data",
+        "description": "How to request deletion of your Empire of the Merchant (iFlag) data: progress on the device, the Google Play Games copy, ad data and support messages.",
+        "lead": "Empire of the Merchant, by iFlag (Italo Bandeira), has no accounts and no server of its own. Here is how to delete each kind of data, what gets deleted and what is kept.",
+        "ledger": [
+            ("phone", "Progress on the device: you delete it yourself, instantly, in the game Options."),
+            ("crown", "Cloud copy: deleted in the Play Games app or by asking us."),
+            ("ad", "Email requests are answered within 15 business days."),
+        ],
+        "summary_title": "In short",
+        "summary": "To delete everything: use \"Erase progress\" in the game Options, delete the game data in the Play Games app and reset your Android advertising ID. If you prefer, write to iflagdev@gmail.com with the subject \"Delete data - Empire of the Merchant\" and we will guide you and confirm each step.",
+        "sections": [
+            ("steps", "1. How to request deletion",
+             "<ol>"
+             "<li><strong>In the game:</strong> open Options and tap \"Erase progress\". The save on the device is deleted immediately and the game starts over.</li>"
+             "<li><strong>Google Play Games copy:</strong> in the Play Games app, open your profile, go to Settings and choose to delete this game's data (or your whole Play Games account).</li>"
+             "<li><strong>Ad data:</strong> in Android settings, under Google &gt; Ads, reset or delete your advertising ID. This breaks the link between your device and the data already collected by Unity (LevelPlay).</li>"
+             '<li><strong>By email:</strong> write to <a href="mailto:iflagdev@gmail.com?subject=Delete%20data%20-%20Empire%20of%20the%20Merchant">iflagdev@gmail.com</a> with the subject \"Delete data - Empire of the Merchant\". Tell us which data you want deleted; for the Play Games copy, include your player name. We reply within 15 business days and confirm when it is done.</li>'
+             "</ol>"),
+            ("deleted", "2. What is deleted",
+             "<ul>"
+             "<li><strong>Game progress on the device</strong> (gold, shops, heroes, gems, settings): deleted immediately by \"Erase progress\", by clearing the app data or by uninstalling the game.</li>"
+             "<li><strong>Progress copy in Google Play Games:</strong> deleted by Google when you delete the game data in the Play Games app.</li>"
+             "<li><strong>Support messages:</strong> deleted within 30 days of the request.</li>"
+             "</ul>"),
+            ("kept", "3. What may be kept",
+             "<ul>"
+             "<li><strong>Purchase records:</strong> kept by Google Play, linked to your Google Account, for as long as the law and Google's policies require. iFlag has no copy. Permanent purchases remain valid and come back if you reinstall the game.</li>"
+             '<li><strong>Ad data:</strong> kept by Unity Technologies under <a href="' + UNITY + '" target="_blank" rel="noopener noreferrer">Unity\'s privacy policy</a>, which explains how to request deletion directly from them. Resetting your advertising ID stops new data from being linked to the old.</li>'
+             "<li><strong>Legal obligations:</strong> anything the law requires us to keep (for example, proof that a request was handled) is kept only as long as needed.</li>"
+             "</ul>"),
+            ("contact", "4. Contact us",
+             '<div class="contact-panel"><p><b>Italo Bandeira, iFlag</b><br>Empire of the Merchant data deletion</p><a href="mailto:iflagdev@gmail.com">iflagdev@gmail.com</a></div>'),
         ],
     },
     "contact": {
