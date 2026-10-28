@@ -111,7 +111,8 @@ def anim(name, scale, root, cls="", style=""):
     fw, fh = frames[0]["frame"]["w"], frames[0]["frame"]["h"]
     dur = sum(f.get("duration", 100) for f in frames)
     n = len(frames)
-    css = (f"--img:url('{root}assets/img/anims/{name}.png');--w:{fw * scale}px;--h:{fh * scale}px;"
+    # background-image direto no style: url() dentro de variável CSS resolve relativo ao style.css, não à página
+    css = (f"background-image:url('{root}assets/img/anims/{name}.png');--w:{fw * scale}px;--h:{fh * scale}px;"
            f"--sheet:{fw * scale * n}px;--frames:{n};--dur:{dur}ms;{style}")
     return f'<span class="anim {cls}" style="{css}" aria-hidden="true"></span>'
 

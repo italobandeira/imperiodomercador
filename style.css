@@ -121,7 +121,6 @@ a:hover { color: var(--white); }
 .anim {
   display: inline-block; flex: none;
   width: var(--w); height: var(--h);
-  background-image: var(--img);
   background-repeat: no-repeat;
   background-size: var(--sheet) var(--h);
   image-rendering: pixelated;
